@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* for logo by google font */
+[x-clock]{
+  display: none;
+}
+
+
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
+   .logo {
+      font-family: 'Allerta Stencil', sans-serif;
+    }
+    /* {{-- to hide scroll bar --}} */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+
+    /* {{-- end --}} */
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+
+    .serif {
+      font-family: 'Zilla Slab', serif;
+    }
+
+    [x-cloak] { display: none; }
+
+    .grid-indigo {
+      background-image: radial-gradient(#5a67d8 2px, transparent 2px);
+      background-size: 16px 16px;
+    }
+    /* slider lab */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1s;
+    }
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+
+    /*surgries subheading divider*/
+    .hr-sect {
+      display: flex;
+      flex-basis: 100%;
+      align-items: center;
+      margin: -10px 0px;
+    }
+
+    .hr-sect::before,
+    .hr-sect::after {
+      content: "";
+      flex-grow: .4;
+
+      background: rgba(10, 4, 4, 0.904);
+      height: 3px;
+      margin: 0px 8px;
+    }
+    /* or */
+    .hr-sect2 {
+      display: flex;
+      flex-basis: 100%;
+      align-items: center;
+      margin: -10px 0px;
+    }
+
+    .hr-sect2::before,
+    .hr-sect2::after {
+      content: "";
+      flex-grow: .4;
+  border-radius: 2px;
+  color: black;
+  opacity: .6;
+      background: rgb(136, 135, 135);
+      height: 2px;
+      margin: 0px 8px;
+    }
+    /* surgery */
+    .hr-sec1 {
+      display: flex;
+      flex-basis: 100%;
+      align-items: center;
+      margin: -10px 0px;
+      margin-left: -20px;
+    }
+
+    .hr-sec1::before,
+    .hr-sec1::after {
+      content: "";
+      flex-grow: .15;
+
+      background: rgba(10, 4, 4, 0.904);
+      height: 3px;
+      margin: 0px 8px;
+    }
+    /* scroll */
+        .childd {
+          width: 100px;
+          white-space: nowrap;
+          overflow-x: scroll;
+        }
+    .child2 {
+      width: 100px;
+      white-space: wrap;
+      overflow-x: scroll;
+    }
+/* animatedarrow mark to slide */
+ .hr-sect3 {
+   display: flex;
+   flex-basis: 100%;
+   align-items: center;
+   margin: -10px 0px;
+ }
+
+ .hr-sect3::before,
+ .hr-sect3::after {
+   content: "";
+   flex-grow: 1;
+
+   background: rgba(10, 4, 4, 0.904);
+   height: 3px;
+   margin: 0px 8px;
+ }
+ /* custom page scrollbar */
+ .mostly-customized-scrollbar::-webkit-scrollbar {
+   width: 16px;
+   height: 8px;
+   background-color: inherit;
+   /* or add it to the track */
+ }
+
+ /* Add a thumb */
+ .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+   background: rgb(21, 94, 117);
+   border-radius:8px;
+   }
